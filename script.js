@@ -1,6 +1,6 @@
 $(document).ready(function() {
-   const apiRoot = 'https://nameless-river-37990.herokuapp.com/v1/task/';
-   const trelloApiRoot = ''https://nameless-river-37990.herokuapp.com/v1/trello/';
+   var apiRoot = 'https://nameless-river-37990.herokuapp.com/v1/task/';
+   var trelloApiRoot = 'https://nameless-river-37990.herokuapp.com/v1/trello/';
    const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
    const $tasksContainer = $('[data-tasks-container]');
 
@@ -63,7 +63,7 @@ $(document).ready(function() {
    }
 
    function getAllTasks() {
-      const requestUrl = apiRoot + 'getTasks';
+      var requestUrl = apiRoot + 'getTasks';
 
       $.ajax({
          url: requestUrl,
